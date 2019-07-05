@@ -12,7 +12,8 @@
   "keywords": [
     "vue",
     "image-drawer",
-    "image-painter"
+    "image-painter",
+    "img-draw"
   ],
   "main": "dist/vue-image-drawer.min.js",
   "module": "dist/vue-image-drawer.esm.min.js",
