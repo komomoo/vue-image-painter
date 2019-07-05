@@ -1,4 +1,4 @@
-# vue-image-drawer
+# vue-image-painter
 
 > 图像动态绘制效果
 
@@ -6,31 +6,31 @@
 
 <img src="./demo/assets/demo.gif" width="320" style="margin-top: 20px;">
 
-[Demo](https://wannaxiao.github.io/vue-image-drawer/demo/dist/)
+[Demo](https://wannaxiao.github.io/vue-image-painter/demo/dist/)
 
-[Demo 源码](https://github.com/wannaxiao/vue-image-drawer/blob/master/demo/App.vue)
+[Demo 源码](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
 
 ## 🚀 快速开始
 
 1.  安装
 
 ```bash
-yarn add vue-image-drawer # 或 npm i -S vue-image-drawer
+yarn add vue-image-painter # 或 npm i -S vue-image-painter
 ```
 
 2.  引入
 
 ```js
 // main.js 入口中
-import ImageDrawer from 'vue-image-drawer'
-Vue.use(ImageDrawer)
+import ImagePainter from 'vue-image-painter'
+Vue.use(ImagePainter)
 ```
 
-3.  使用，请参考[Demo 源码](https://github.com/wannaxiao/vue-image-drawer/blob/master/demo/App.vue)
+3.  使用，请参考[Demo 源码](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
 
 ```html
 <!-- 本地图片的 src 必须用 require('') 引入  -->
-<ImageDrawer :src=""></ImageDrawer>
+<ImagePainter :src=""></ImagePainter>
 ```
 
 ## 🔌 API
@@ -41,6 +41,7 @@ Vue.use(ImageDrawer)
 | --------- | --------------------------------------- | ------- | --------- |
 | src       | 图片链接。本地图片须用 require('') 引入 | String  | undefined |
 | alt       | 图片描述                                | String  | undefined |
+| animation | 动画效果，可选：'draw'，'blur'          | String  | 'draw'    |
 | duration  | 动画持续时间                            | Number  | 4000      |
 | immediate | 立即显示图片和动画，而不等图片加载完    | Boolean | false     |
 

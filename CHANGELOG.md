@@ -8,5 +8,5 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* demo ([11249d6](https://github.com/wannaxiao/vue-image-drawer/commit/11249d6))
-* ImageDrawer ([19d8d69](https://github.com/wannaxiao/vue-image-drawer/commit/19d8d69))
+* demo ([11249d6](https://github.com/wannaxiao/vue-image-painter/commit/11249d6))
+* ImagePainter ([19d8d69](https://github.com/wannaxiao/vue-image-painter/commit/19d8d69))

@@ -1,22 +1,22 @@
 {
-  "name": "vue-image-drawer",
+  "name": "vue-image-painter",
   "version": "0.1.0",
-  "description": "图像动态绘制效果",
+  "description": "图像动态显示效果",
   "author": "momoko <ko.momo@qq.com>",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/wannaxiao/vue-image-drawer"
+    "url": "https://github.com/wannaxiao/vue-image-painter"
   },
   "keywords": [
     "vue",
     "image-drawer",
     "image-painter",
-    "img-draw"
+    "img-paint"
   ],
-  "main": "dist/vue-image-drawer.min.js",
-  "module": "dist/vue-image-drawer.esm.min.js",
+  "main": "dist/vue-image-painter.min.js",
+  "module": "dist/vue-image-painter.esm.min.js",
   "scripts": {
     "dev": "parcel demo/index.html -p 8080 --out-dir demo/dev",
     "build:demo": "rm -rf demo/dist/ && parcel build demo/index.html --out-dir demo/dist --public-url ./",
@@ -53,7 +53,6 @@
     "standard-version": "^4.4.0",
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.2",
-    "vue-slim-loading": "^1.0.2",
     "vue-template-compiler": "^2.6.10"
   }
 }

@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import App from './App'
-import ImageDrawer from '../src' // dev
-import Loading from 'vue-slim-loading'
+import ImagePainter from '../src' // dev
 
-Vue.use(ImageDrawer)
-Vue.use(Loading)
+Vue.use(ImagePainter)
 
 Vue.config.productionTip = true
 
