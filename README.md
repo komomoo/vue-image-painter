@@ -1,70 +1,71 @@
 # vue-image-painter
 
-> 图像动态绘制效果
+English | [简体中文](./README.zh-CN.md)
 
-## 🐠 示例
+## 🌰 Example
 
 <img src="./demo/assets/demo.gif" width="320" style="margin-top: 20px;">
 
 [Demo](https://wannaxiao.github.io/vue-image-painter/demo/dist/)
 
-[Demo 源码](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
+[Demo Source Code](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
 
-## 🚀 快速开始
+## 🚀 QuickStart
 
-1.  安装
+1.  Install
 
 ```bash
-yarn add vue-image-painter # 或 npm i -S vue-image-painter
+yarn add vue-image-painter # OR npm i -S vue-image-painter
 ```
 
-2.  引入
+2.  Import
 
 ```js
-// main.js 入口中
+// main.js
 import ImagePainter from 'vue-image-painter'
 Vue.use(ImagePainter)
 ```
 
-3.  使用，请参考[Demo 源码](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
+3.  Usage. Please refer to the [Demo Source Code](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
 
 ```html
-<!-- 本地图片的 src 必须用 require('') 引入  -->
-<ImagePainter :src=""></ImagePainter>
+<ImagePainter :src="https://www.images.com/a.jpg"></ImagePainter>
 ```
 
 ## 🔌 API
 
 ### Props
 
-| 选项      | 说明                                    | 类型    | 默认值    |
-| --------- | --------------------------------------- | ------- | --------- |
-| src       | 图片链接。本地图片须用 require('') 引入 | String  | undefined |
-| alt       | 图片描述                                | String  | undefined |
-| animation | 动画效果，可选：'draw'，'blur'          | String  | 'draw'    |
-| duration  | 动画持续时间                            | Number  | 4000      |
-| immediate | 立即显示图片和动画，而不等图片加载完    | Boolean | false     |
+| Name      | Description                                                                 | Type    | Default   |
+| --------- | --------------------------------------------------------------------------- | ------- | --------- |
+| src       | image URL. local images must be used `require('')`                          | String  | undefined |
+| alt       | image alt                                                                   | String  | undefined |
+| animation | animation effect. optional key: 'draw'，'blur'                              | String  | 'draw'    |
+| duration  | animation duration. unit: ms                                                | Number  | 4000      |
+| immediate | display images and animations immediately, don't wait for the image to load | Boolean | false     |
 
 ### Events
 
-| 事件名    | 说明         | 回调参数 |
-| --------- | ------------ | -------- |
-| loadStart | 图片加载开始 | null     |
-| loadEnd   | 图片加载结束 | null     |
+| Name      | Description      | Parameters |
+| --------- | ---------------- | ---------- |
+| loadStart | image load start | null       |
+| loadEnd   | image load end   | null       |
 
 ### Slots
 
-| 名称    | 说明                                       |
-| ------- | ------------------------------------------ |
-| default | 图片未显示前，ImageDrawer 内需要显示的内容 |
+| Name    | Description                                                   |
+| ------- | ------------------------------------------------------------- |
+| default | The content ImagePainter displays, before the image is loaded |
 
 ---
 
-😉😘 如果它对你有所帮助，可以点一下 <b>⭐️<a href="#">Star</a></b> ~
+😉😘 If it is helpful to you，please encourage me with a <b>⭐️<a href="#">Star</a></b> ~
 
-## 参考
+## Thanks
 
 - [ImageDrawer.js](https://github.com/UstymUkhman/ImageDrawer.js)
+
+## [Changelog](./CHANGELOG.md)
 
 ## License
 
