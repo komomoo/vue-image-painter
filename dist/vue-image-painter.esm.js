@@ -1,11 +1,11 @@
 /*!
- * vue-image-painter v0.1.1
+ * vue-image-painter v0.1.2
  * Copyright (c) 2018-present, momoko <ko.momo@qq.com>
  * Released under the MIT License.
  */
 
 var name = "vue-image-painter";
-var version = "0.1.1";
+var version = "0.1.2";
 var description = "图像动态绘制效果";
 var author = "momoko <ko.momo@qq.com>";
 var license = "MIT";
