@@ -1,5 +1,5 @@
 /**
- * vue-image-drawer
+ * vue-image-painter
  * @Author momoko
  * @Date 2019/06
  */
@@ -11,7 +11,7 @@
       :src="src"
       :alt="alt"
       :style="{'animationDuration': duration/ 1000 + 's'}"
-      :class="imgClass"
+      :class="[c('_img'), imgClass]"
       @load="loadEnd">
     <slot v-if="!show"></slot>
   </div>
@@ -21,7 +21,7 @@
 import mixin from './mixins'
 
 export default {
-  name: 'ImageDrawer',
+  name: 'ImagePainter',
   mixins: [mixin],
   props: {
     src: {
@@ -33,6 +33,11 @@ export default {
       // 图片描述
       type: String,
       default: undefined,
+    },
+    animation: {
+      // 动画效果，可选：'drawer'，'blur'
+      type: String,
+      default: 'drawer',
     },
     duration: {
       // 动画持续时间
@@ -70,7 +75,7 @@ export default {
     },
     draw () {
       this.show = true
-      this.imgClass = 'drawer'
+      this.imgClass = this.animation
     },
     loadEnd () {
       this.$emit('loadEnd')
@@ -81,53 +86,15 @@ export default {
 </script>
 
 <style lang="stylus">
-$ = vue-image-drawer;
-$color = #409EFF;
+@import './style/animation.styl';
+
+$ = vue-image-painter;
 .{$} {
   width: 100%;
   overflow: hidden;
 
-  > img {
+  &_img {
     width: 100%;
-  }
-
-  @keyframes drawer {
-    // 1st step: drawing borders with a pencil
-    0% {
-      filter: brightness(10) contrast(10) grayscale(1);
-      opacity: 0;
-    }
-
-    5% {
-      filter: brightness(5) contrast(10) grayscale(1);
-      opacity: 0.5;
-    }
-
-    30% {
-      filter: brightness(3) contrast(10) grayscale(1);
-      opacity: 1;
-    }
-
-    // 2nd step: define better outlines and shades with a pencil
-    50% {
-      filter: brightness(2) contrast(2) grayscale(1);
-    }
-
-    // 3nd step: give it some basic, very vanish colors
-    75% {
-      filter: brightness(1.5) contrast(1) grayscale(0.4) saturate(0.8);
-    }
-
-    // 4nd step: complete the picture with all its colors (a bit more bright and alive)
-    100% {
-      filter: brightness(1.05) contrast(1) grayscale(0) saturate(1.05);
-    }
-  }
-
-  .drawer {
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    animation-name: drawer;
   }
 }
 </style>

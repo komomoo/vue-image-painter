@@ -1,7 +1,7 @@
-import ImageDrawer from './ImageDrawer'
+import ImagePainter from './ImagePainter'
 
-ImageDrawer.install = function (Vue) {
-  Vue.component(ImageDrawer.name, ImageDrawer)
+ImagePainter.install = function (Vue) {
+  Vue.component(ImagePainter.name, ImagePainter)
 }
 
-export default ImageDrawer
+export default ImagePainter
