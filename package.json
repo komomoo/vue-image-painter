@@ -1,7 +1,7 @@
 {
   "name": "vue-image-painter",
-  "version": "0.1.0",
-  "description": "图像动态显示效果",
+  "version": "0.1.1",
+  "description": "图像动态绘制效果",
   "author": "momoko <ko.momo@qq.com>",
   "license": "MIT",
   "private": false,

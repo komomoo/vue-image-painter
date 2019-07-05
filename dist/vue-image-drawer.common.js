@@ -1,19 +1,19 @@
 /*!
- * vue-image-drawer v0.1.0
+ * vue-image-painter v0.1.0
  * Copyright (c) 2018-present, momoko <ko.momo@qq.com>
  * Released under the MIT License.
  */
 
 'use strict';
 
-var name = "vue-image-drawer";
+var name = "vue-image-painter";
 var version = "0.1.0";
 var description = "图像动态绘制效果";
 var author = "momoko <ko.momo@qq.com>";
 var license = "MIT";
 var repository = {
 	type: "git",
-	url: "https://github.com/wannaxiao/vue-image-drawer"
+	url: "https://github.com/wannaxiao/vue-image-painter"
 };
 var keywords = [
 	"vue",
@@ -21,8 +21,8 @@ var keywords = [
 	"image-painter",
 	"img-draw"
 ];
-var main = "dist/vue-image-drawer.min.js";
-var module$1 = "dist/vue-image-drawer.esm.min.js";
+var main = "dist/vue-image-painter.min.js";
+var module$1 = "dist/vue-image-painter.esm.min.js";
 var scripts = {
 	dev: "parcel demo/index.html -p 8080 --out-dir demo/dev",
 	"build:demo": "rm -rf demo/dist/ && parcel build demo/index.html --out-dir demo/dist --public-url ./",
@@ -329,7 +329,7 @@ var __vue_staticRenderFns__ = [];
 var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
   inject("data-v-0389cda0_0", {
-    source: ".vue-image-drawer{width:100%;overflow:hidden}.vue-image-drawer>img{width:100%}.vue-image-drawer .drawer{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:drawer;animation-name:drawer}@-webkit-keyframes drawer{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}@keyframes drawer{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}",
+    source: ".vue-image-painter{width:100%;overflow:hidden}.vue-image-painter>img{width:100%}.vue-image-painter .drawer{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:drawer;animation-name:drawer}@-webkit-keyframes drawer{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}@keyframes drawer{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}",
     map: undefined,
     media: undefined
   });

@@ -1,11 +1,13 @@
 /*!
- * vue-image-painter v0.1.0
+ * vue-image-painter v0.1.1
  * Copyright (c) 2018-present, momoko <ko.momo@qq.com>
  * Released under the MIT License.
  */
 
+'use strict';
+
 var name = "vue-image-painter";
-var version = "0.1.0";
+var version = "0.1.1";
 var description = "图像动态绘制效果";
 var author = "momoko <ko.momo@qq.com>";
 var license = "MIT";
@@ -17,10 +19,10 @@ var keywords = [
 	"vue",
 	"image-drawer",
 	"image-painter",
-	"img-draw"
+	"img-paint"
 ];
 var main = "dist/vue-image-painter.min.js";
-var module = "dist/vue-image-painter.esm.min.js";
+var module$1 = "dist/vue-image-painter.esm.min.js";
 var scripts = {
 	dev: "parcel demo/index.html -p 8080 --out-dir demo/dev",
 	"build:demo": "rm -rf demo/dist/ && parcel build demo/index.html --out-dir demo/dist --public-url ./",
@@ -58,7 +60,6 @@ var devDependencies = {
 	"standard-version": "^4.4.0",
 	vue: "^2.6.10",
 	"vue-hot-reload-api": "^2.3.2",
-	"vue-slim-loading": "^1.0.2",
 	"vue-template-compiler": "^2.6.10"
 };
 var pkg = {
@@ -71,7 +72,7 @@ var pkg = {
 	repository: repository,
 	keywords: keywords,
 	main: main,
-	module: module,
+	module: module$1,
 	scripts: scripts,
 	eslintConfig: eslintConfig,
 	eslintIgnore: eslintIgnore,
@@ -93,7 +94,7 @@ var mixin = {
 
 //
 var script = {
-  name: 'ImageDrawer',
+  name: 'ImagePainter',
   mixins: [mixin],
   props: {
     src: {
@@ -105,6 +106,11 @@ var script = {
       // 图片描述
       type: String,
       default: undefined
+    },
+    animation: {
+      // 动画效果，可选：'draw'，'blur'
+      type: String,
+      default: 'draw'
     },
     duration: {
       // 动画持续时间
@@ -143,7 +149,7 @@ var script = {
     },
     draw: function draw() {
       this.show = true;
-      this.imgClass = 'drawer';
+      this.imgClass = this.animation;
     },
     loadEnd: function loadEnd() {
       this.$emit('loadEnd');
@@ -307,7 +313,7 @@ var __vue_render__ = function __vue_render__() {
       value: _vm.show,
       expression: "show"
     }],
-    class: _vm.imgClass,
+    class: [_vm.c('_img'), _vm.imgClass],
     style: {
       'animationDuration': _vm.duration / 1000 + 's'
     },
@@ -326,8 +332,8 @@ var __vue_staticRenderFns__ = [];
 
 var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-0389cda0_0", {
-    source: ".vue-image-painter{width:100%;overflow:hidden}.vue-image-painter>img{width:100%}.vue-image-painter .drawer{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:drawer;animation-name:drawer}@-webkit-keyframes drawer{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}@keyframes drawer{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}",
+  inject("data-v-684a6a03_0", {
+    source: ".vue-image-painter .draw{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:draw;animation-name:draw}.vue-image-painter .blur{-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:blur;animation-name:blur}@-webkit-keyframes draw{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}@keyframes draw{0%{-webkit-filter:brightness(10) contrast(10) grayscale(1);filter:brightness(10) contrast(10) grayscale(1);opacity:0}5%{-webkit-filter:brightness(5) contrast(10) grayscale(1);filter:brightness(5) contrast(10) grayscale(1);opacity:.5}30%{-webkit-filter:brightness(3) contrast(10) grayscale(1);filter:brightness(3) contrast(10) grayscale(1);opacity:1}50%{-webkit-filter:brightness(2) contrast(2) grayscale(1);filter:brightness(2) contrast(2) grayscale(1)}75%{-webkit-filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8);filter:brightness(1.5) contrast(1) grayscale(.4) saturate(.8)}100%{-webkit-filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05);filter:brightness(1.05) contrast(1) grayscale(0) saturate(1.05)}}@-webkit-keyframes blur{0%{-webkit-filter:blur(50px);filter:blur(50px);opacity:0}10%{-webkit-filter:blur(30px);filter:blur(30px);opacity:.6}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes blur{0%{-webkit-filter:blur(50px);filter:blur(50px);opacity:0}10%{-webkit-filter:blur(30px);filter:blur(30px);opacity:.6}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}.vue-image-painter{width:100%;overflow:hidden}.vue-image-painter_img{width:100%}",
     map: undefined,
     media: undefined
   });
@@ -344,13 +350,13 @@ var __vue_module_identifier__ = undefined;
 var __vue_is_functional_template__ = false;
 /* style inject SSR */
 
-var ImageDrawer = normalizeComponent_1({
+var ImagePainter = normalizeComponent_1({
   render: __vue_render__,
   staticRenderFns: __vue_staticRenderFns__
 }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, browser, undefined);
 
-ImageDrawer.install = function (Vue) {
-  Vue.component(ImageDrawer.name, ImageDrawer);
+ImagePainter.install = function (Vue) {
+  Vue.component(ImagePainter.name, ImagePainter);
 };
 
-export default ImageDrawer;
+module.exports = ImagePainter;
