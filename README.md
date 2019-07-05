@@ -1,13 +1,10 @@
 # vue-image-drawer
 
-> 开箱即用的 vue 加载组件，改造于 ElementUI/Loading
+> 图像动态绘制效果
 
-## ✨ 特性
+## 🐠 示例
 
-- 开箱即用/极简使用
-- 体积：6k
-
-## 🐠 示例&文档
+<img src="./demo/assets/demo.gif" width="320" style="margin-top: 20px;">
 
 [Demo](https://wannaxiao.github.io/vue-image-drawer/demo/dist/)
 
@@ -25,56 +22,48 @@ yarn add vue-image-drawer # 或 npm i -S vue-image-drawer
 
 ```js
 // main.js 入口中
-import Loading from 'vue-image-drawer'
-Vue.use(Loading)
+import ImageDrawer from 'vue-image-drawer'
+Vue.use(ImageDrawer)
 ```
 
 3.  使用，请参考[Demo 源码](https://github.com/wannaxiao/vue-image-drawer/blob/master/demo/App.vue)
 
 ```html
-<!-- 任意元素中使用指令 v-loading -->
-<section v-loading="true">瀑布的水逆流而上</section>
+<!-- 本地图片的 src 必须用 require('') 引入  -->
+<ImageDrawer :src=""></ImageDrawer>
 ```
 
 ## 🔌 API
 
-### Directive
+### Props
 
-| 指令      | 说明     | 类型    | 默认值 |
-| --------- | -------- | ------- | ------ |
-| v-loading | 是否显示 | Boolean | false  |
+| 选项      | 说明                                    | 类型    | 默认值    |
+| --------- | --------------------------------------- | ------- | --------- |
+| src       | 图片链接。本地图片须用 require('') 引入 | String  | undefined |
+| alt       | 图片描述                                | String  | undefined |
+| duration  | 动画持续时间                            | Number  | 4000      |
+| immediate | 立即显示图片和动画，而不等图片加载完    | Boolean | false     |
 
-### Option
+### Events
 
-| 选项         | 说明       | 类型   | 默认值    |
-| ------------ | ---------- | ------ | --------- |
-| text         | 文本显示   | String | null      |
-| color        | 颜色       | String | '#409EFF' |
-| maskClass    | 遮罩样式类 | Array  | null      |
-| spinnerClass | 加载样式类 | Array  | null      |
+| 事件名    | 说明         | 回调参数 |
+| --------- | ------------ | -------- |
+| loadStart | 图片加载开始 | null     |
+| loadEnd   | 图片加载结束 | null     |
 
-```js
-// main.js 入口中
-import Loading from 'vue-image-drawer'
-Vue.use(Loading, { text: '加载中', color: 'green' })
-```
+### Slots
 
-### Attribute
+| 名称    | 说明                                       |
+| ------- | ------------------------------------------ |
+| default | 图片未显示前，ImageDrawer 内需要显示的内容 |
 
-> Attribute 将会覆盖 Option
+---
 
-| 属性          | 说明     | 类型   | 默认值    |
-| ------------- | -------- | ------ | --------- |
-| loading-text  | 文本显示 | String | null      |
-| loading-color | 颜色     | String | '#409EFF' |
-
-```html
-<section v-loading="true" loading-text="加载中">瀑布的水逆流而上</section>
-```
-
-<br>
-<br>
 😉😘 如果它对你有所帮助，可以点一下 <b>⭐️<a href="#">Star</a></b> ~
+
+## 参考
+
+- [ImageDrawer.js](https://github.com/UstymUkhman/ImageDrawer.js)
 
 ## License
 
