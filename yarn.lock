@@ -2571,10 +2571,10 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-dio-bundler@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.npm.taobao.org/dio-bundler/download/dio-bundler-0.5.1.tgz#46ff81a8c86a8b754341eb7244e4a512a3e82e46"
-  integrity sha1-Rv+BqMhqi3VDQetyROSlEqPoLkY=
+dio-bundler@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.npm.taobao.org/dio-bundler/download/dio-bundler-0.5.2.tgz#6e4ad820f303289de6816e1594d144d9022ab7e6"
+  integrity sha1-bkrYIPMDKJ3mgW4VlNFE2QIqt+Y=
   dependencies:
     "@babel/core" "^7.3.3"
     autoprefixer "^9.5.1"
@@ -7496,6 +7496,11 @@ vue-runtime-helpers@1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/vue-runtime-helpers/download/vue-runtime-helpers-1.0.0.tgz#af5fe1c8d727beb680b2eb9d791c8e022342e54d"
   integrity sha1-r1/hyNcnvraAsuudeRyOAiNC5U0=
+
+vue-slim-loading@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/vue-slim-loading/download/vue-slim-loading-1.0.2.tgz#686affc5a84049ee8ac2494b416a2c15b1d39902"
+  integrity sha1-aGr/xahASe6KwklLQWosFbHTmQI=
 
 vue-template-compiler@^2.0.0, vue-template-compiler@^2.6.10:
   version "2.6.10"

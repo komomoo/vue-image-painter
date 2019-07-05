@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './App'
-import Loading from '../dist/vue-slim-loading.esm.min.js' // prod
-// import Loading from '../src' // dev
+import ImageDrawer from '../src' // dev
+import Loading from 'vue-slim-loading'
 
+Vue.use(ImageDrawer)
 Vue.use(Loading)
 
 Vue.config.productionTip = true

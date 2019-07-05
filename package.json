@@ -1,7 +1,7 @@
 {
   "name": "vue-image-drawer",
   "version": "0.1.0",
-  "description": "",
+  "description": "图像动态绘制效果",
   "author": "momoko <ko.momo@qq.com>",
   "license": "MIT",
   "private": false,
@@ -46,12 +46,13 @@
     "@babel/core": "^7.3.3",
     "@momoko/babel-preset-vue": "^0.2.0",
     "@momoko/eslint-config-vue": "^1.0.2",
-    "dio-bundler": "^0.5.1",
+    "dio-bundler": "^0.5.2",
     "eslint": "^5.16.0",
     "parcel-bundler": "^1.12.3",
     "standard-version": "^4.4.0",
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.2",
+    "vue-slim-loading": "^1.0.2",
     "vue-template-compiler": "^2.6.10"
   }
 }
