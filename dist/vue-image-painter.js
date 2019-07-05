@@ -1,5 +1,5 @@
 /*!
- * vue-image-painter v0.1.2
+ * vue-image-painter v0.1.3
  * Copyright (c) 2018-present, momoko <ko.momo@qq.com>
  * Released under the MIT License.
  */
@@ -11,8 +11,8 @@
 }(this, function () { 'use strict';
 
   var name = "vue-image-painter";
-  var version = "0.1.2";
-  var description = "图像动态绘制效果";
+  var version = "0.1.3";
+  var description = "Image draw animation effect plugin for Vue 2.x | 图像动态绘制效果";
   var author = "momoko <ko.momo@qq.com>";
   var license = "MIT";
   var repository = {
