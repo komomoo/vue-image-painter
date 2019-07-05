@@ -1,6 +1,9 @@
 $ = vue-image-painter;
 .{$} {
-  @keyframes drawer {
+  /**
+   * draw
+   */
+  @keyframes draw {
     // 1st step: drawing borders with a pencil
     0% {
       filter: brightness(10) contrast(10) grayscale(1);
@@ -33,9 +36,31 @@ $ = vue-image-painter;
     }
   }
 
-  .drawer {
+  .draw {
     animation-timing-function: linear;
     animation-fill-mode: both;
-    animation-name: drawer;
+    animation-name: draw;
+  }
+
+  @keyframes blur {
+    0% {
+      filter: blur(50px);
+      opacity: 0;
+    }
+    10% {
+      filter: blur(30px);
+      opacity: 0.6;
+    }
+
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  .blur {
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-name: blur;
   }
 }

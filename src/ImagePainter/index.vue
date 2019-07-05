@@ -35,9 +35,9 @@ export default {
       default: undefined,
     },
     animation: {
-      // 动画效果，可选：'drawer'，'blur'
+      // 动画效果，可选：'draw'，'blur'
       type: String,
-      default: 'drawer',
+      default: 'draw',
     },
     duration: {
       // 动画持续时间
