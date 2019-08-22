@@ -61,7 +61,7 @@ Vue.use(ImagePainter)
 
 😉😘 如果它对你有所帮助，可以点一下 <b>⭐️<a href="#">Star</a></b> ~
 
-## 参考
+## 灵感
 
 - [ImageDrawer.js](https://github.com/UstymUkhman/ImageDrawer.js)
 
