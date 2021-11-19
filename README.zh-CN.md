@@ -6,9 +6,9 @@
 
 <img src="./demo/assets/demo.gif" width="320" style="margin-top: 20px;">
 
-[Demo](https://wannaxiao.github.io/vue-image-painter/demo/dist/)
+[Demo](https://komomoo.github.io/vue-image-painter/demo/dist/)
 
-[Demo 源码](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
+[Demo 源码](https://github.com/komomoo/vue-image-painter/blob/master/demo/App.vue)
 
 ## 🚀 快速开始
 
@@ -26,7 +26,7 @@ import ImagePainter from 'vue-image-painter'
 Vue.use(ImagePainter)
 ```
 
-3.  使用，请参考[Demo 源码](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
+3.  使用，请参考[Demo 源码](https://github.com/komomoo/vue-image-painter/blob/master/demo/App.vue)
 
 ```html
 <ImagePainter :src="https://www.images.com/a.jpg"></ImagePainter>
@@ -71,4 +71,4 @@ Vue.use(ImagePainter)
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2018-present, momoko
+Copyright (c) 2018-present, komo

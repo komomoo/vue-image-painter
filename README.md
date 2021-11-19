@@ -6,9 +6,9 @@ English | [简体中文](./README.zh-CN.md)
 
 <img src="./demo/assets/demo.gif" width="320" style="margin-top: 20px;">
 
-[Demo](https://wannaxiao.github.io/vue-image-painter/demo/dist/)
+[Demo](https://komomoo.github.io/vue-image-painter/demo/dist/)
 
-[Demo Source Code](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
+[Demo Source Code](https://github.com/komomoo/vue-image-painter/blob/master/demo/App.vue)
 
 ## 🚀 QuickStart
 
@@ -26,7 +26,7 @@ import ImagePainter from 'vue-image-painter'
 Vue.use(ImagePainter)
 ```
 
-3.  Usage. Please refer to the [Demo Source Code](https://github.com/wannaxiao/vue-image-painter/blob/master/demo/App.vue)
+3.  Usage. Please refer to the [Demo Source Code](https://github.com/komomoo/vue-image-painter/blob/master/demo/App.vue)
 
 ```html
 <ImagePainter :src="https://www.images.com/a.jpg"></ImagePainter>
@@ -71,4 +71,4 @@ Vue.use(ImagePainter)
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2018-present, momoko
+Copyright (c) 2018-present, komo

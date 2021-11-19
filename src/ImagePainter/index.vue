@@ -1,6 +1,6 @@
 /**
  * vue-image-painter
- * @Author momoko
+ * @Author komo
  * @Date 2019/06
  */
 

@@ -883,7 +883,7 @@
 
 "@momoko/eslint-config-js@^1.0.2":
   version "1.0.2"
-  resolved "https://registry.npm.taobao.org/@momoko/eslint-config-js/download/@momoko/eslint-config-js-1.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40momoko%2Feslint-config-js%2Fdownload%2F%40momoko%2Feslint-config-js-1.0.2.tgz#ed6e2b605f2daba54369f5f327f000ce259ccce8"
+  resolved "https://registry.npm.taobao.org/@momoko/eslint-config-js/download/@momoko/eslint-config-js-1.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40komo%2Feslint-config-js%2Fdownload%2F%40komo%2Feslint-config-js-1.0.2.tgz#ed6e2b605f2daba54369f5f327f000ce259ccce8"
   integrity sha1-7W4rYF8tq6VDafXzJ/AAziWczOg=
   dependencies:
     babel-eslint "^10.0.1"
@@ -895,7 +895,7 @@
 
 "@momoko/eslint-config-vue@^1.0.2":
   version "1.0.2"
-  resolved "https://registry.npm.taobao.org/@momoko/eslint-config-vue/download/@momoko/eslint-config-vue-1.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40momoko%2Feslint-config-vue%2Fdownload%2F%40momoko%2Feslint-config-vue-1.0.2.tgz#a99ceb801cf71770246b09749e3fe4fd6e855045"
+  resolved "https://registry.npm.taobao.org/@momoko/eslint-config-vue/download/@momoko/eslint-config-vue-1.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40komo%2Feslint-config-vue%2Fdownload%2F%40komo%2Feslint-config-vue-1.0.2.tgz#a99ceb801cf71770246b09749e3fe4fd6e855045"
   integrity sha1-qZzrgBz3F3Akawl0nj/k/W6FUEU=
   dependencies:
     "@momoko/eslint-config-js" "^1.0.2"

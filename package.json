@@ -2,12 +2,12 @@
   "name": "vue-image-painter",
   "version": "0.1.3",
   "description": "🙋‍ Image draw animation effect plugin for Vue 2.x | 图像动态绘制效果",
-  "author": "momoko <ko.momo@qq.com>",
+  "author": "komo <ko.momo@qq.com>",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/wannaxiao/vue-image-painter"
+    "url": "https://github.com/komomoo/vue-image-painter"
   },
   "keywords": [
     "vue",
